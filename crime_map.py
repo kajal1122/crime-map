@@ -11,7 +11,7 @@ def home():
         data = None
     return render_template('home.html',data = data)
 
-@app.route('/add', METHODS = ['POST'])
+@app.route('/add', methods = ['POST'])
 def add():
     try:
         data = request.form.get('user_input')
