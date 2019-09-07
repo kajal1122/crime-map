@@ -12,7 +12,7 @@ class DB:
         connection = self.connect()
         try:
             with connection.cursor() as cursor:
-                sql = f"INSERT INTO crimes (description) VALUES {data}"
+                sql = f"INSERT INTO crimes (description) VALUES ({data})"
                 cursor.execute(sql)
                 connection.commit()
         finally:
