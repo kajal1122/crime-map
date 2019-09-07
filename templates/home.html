@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Home</h2>
+    <form class="" action="/add" method="post">
+      <input type="text" name="user_input" placeholder="Enter Crime Description">
+      <input type="submit" name="" value="Submit">
+    </form>
+    <a href="/clear">Clear All Data</a>
+    {% for crime in data %}
+       <p>{{ crime }}</p>
+      {% endfor %}
+  </body>
+</html>
